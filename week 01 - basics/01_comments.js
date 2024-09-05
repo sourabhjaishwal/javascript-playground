@@ -11,7 +11,7 @@
 // let z = 4;
 
 // multi line comments
-
+/*
 const value = 2;
 if (value == 0) {
     console.log(`${value} is zero.`);
@@ -19,3 +19,4 @@ if (value == 0) {
     console.log(`${value} is greater than zero.`);
     
 }
+*/
