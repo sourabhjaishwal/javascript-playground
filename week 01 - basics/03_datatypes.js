@@ -13,64 +13,49 @@ console.log(2
 
 // Primitive
 
-//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
+// 7 types :- String, Number, Boolean, null, undefined, Symbol, BigInt
 
-const firstName = "sourabh";
+const firstName = "sourabh";    // " "
 
-const score = 100;
-const scoreValue = 100.3;
+const score = 100;              // complete number
+const scoreValue = 100.3;       // decimal value
 
-const isLoggedIn = true;
+const isLoggedIn = true;        // true/false
 
-// number => 2 to power 53
-// bigint
-// string => ""
-// boolean => true/false
-// null => standalone value
-// undefined => 
-// symbol => unique
+const outsideTemp = null;       // standalone value (variable created but value as empty - intentionally)
 
+let userEmail;                  // undefined (variable created but empty)
 
-// object
+const id = Symbol('123');       // unique value
 
-console.log(typeof undefined); // undefined
-console.log(typeof null); // object
+const bigNumber = 3456543576654356754n;
 
 
+console.table([firstName, score, scoreValue, isLoggedIn, outsideTemp, userEmail, id, bigNumber]);
 
 
+// checking type of data
+console.log(typeof undefined);  // undefined
+console.log(typeof null);       // object
 
 
+// Non-Primitive (Reference)
 
+// 3 types :- Array, Objects, Functions
 
+const heros = ["ironman", "captain-america", "thor", "hulk"];
 
-
-const outsideTemp = null
-let userEmail;
-
-const id = Symbol('123')
-const anotherId = Symbol('123')
-
-console.log(id === anotherId);
-
-// const bigNumber = 3456543576654356754n
-
-
-
-// Reference (Non primitive)
-
-// Array, Objects, Functions
-
-const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
-    name: "hitesh",
+    name: "sourabh",
     age: 22,
 }
 
 const myFunction = function(){
     console.log("Hello world");
 }
+myFunction();
 
-console.log(typeof anotherId);
+console.log(myFunction);            // can change to view output
+console.log(typeof myFunction);     // can change to view type of data
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
